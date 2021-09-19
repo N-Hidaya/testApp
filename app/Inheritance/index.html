@@ -1,0 +1,21 @@
+<!-- remember to add html head and script tags-->
+<html>
+<head>
+<link type="stylesheet" href="style.css"/>
+<script src="app.js"></script>
+</head>
+</html>
+<div class="spicy">
+    <div ng-controller="MainController">
+        <p>Good {{timeOfDay}}, {{name}}!</p>
+        
+        <div ng-controller="ChildController">
+            <p>Good {{timeOfDay}}, {{name}}!</p>
+            
+            <div ng-controller="GrandchildController">
+                <p>Good {{timeOfDay}}, {{name}}!</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
